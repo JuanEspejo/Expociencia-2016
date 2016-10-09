@@ -47,5 +47,5 @@ temp2 = function ( dfib = 4e-03, daire = 2e-02,
       print(a)
       print(b)
       plot.new()
-      curve((t0K - b/a)*exp(-60*a*x) + b/a - 273.15, from=0, to=30, , xlab="tiempo(min.)", ylab="T(°C)")
+      curve((t0K - b/a)*exp(-60*a*x) + b/a - 273.15, from=0, to=30, , xlab="tiempo(min.)", ylab="T(°C)", main="Temperatura Interna en la Noche")
 }
