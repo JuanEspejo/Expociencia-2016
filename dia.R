@@ -2,11 +2,12 @@ temp = function ( dfib = 4e-03, dairet = 2e-02,
                   daire = 3.9e-02, dpiedra = 4.1e-02, 
                   dtriplay = 1e-02, dpared = 5.1e-02,
                   lint = 4.9e-01, h = 2.68e-01, lambda = 12,
-                  irra = 200, tinf = 30, tsuelo = 25, theta = 5e-01 )
+                  irra = 200, tinf = 28, tsuelo = 25, t0 = 24, theta = 5e-01 )
 
 {
       tinfK = tinf + 273.15
       tsueloK = tsuelo + 273.15
+      t0K = t0 + 273.15
       delta = lint*tan(lambda*pi/180)
       
       R = 8.31434
@@ -51,7 +52,7 @@ temp = function ( dfib = 4e-03, dairet = 2e-02,
       print(a)
       print(b)
       plot.new()
-      curve((tinfK - b/a)*exp(-60*a*x) + b/a - 273.15, from=0, to=30, , xlab="tiempo(min.)", ylab="T(°C)")
+      curve((t0K - b/a)*exp(-60*a*x) + b/a - 273.15, from=0, to=30, , xlab="tiempo(min.)", ylab="T(°C)")
 }    
     
     
