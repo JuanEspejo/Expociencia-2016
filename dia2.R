@@ -2,10 +2,10 @@ temp = function ( dfib = 4e-03, dairet = 2e-02,
                   daire = 3.9e-02, dpiedra = 4.1e-02, 
                   dtriplay = 1e-02, dpared = 5.1e-02,
                   lint = 4.9e-01, h = 2.68e-01, lambda = 12,
-                  irra = 200, tsuelo = 25, t0 = 24, theta = 5e-01 )
+                  t0 = 24, theta = 5e-01 )
 
 {
-      tsueloK = tsuelo + 273.15
+      tsuelo =  ############
       t0K = t0 + 273.15 
       delta = lint*tan(lambda*pi/180)
       
@@ -46,7 +46,7 @@ temp = function ( dfib = 4e-03, dairet = 2e-02,
       n = paire*vcasa/M
       
       a = ((1-theta)*atecho*htecho + alateral*hlateral + asuelo*hsuelo) / (5/2*n*R)
-      b = (alpha*theta*irra*atecho + (1-theta)*atecho*htecho*ttecho + alateral*hlateral*tinf + asuelo*hsuelo*tsueloK) / (5/2*n*R)      
+      b = (alpha*theta*irra*atecho + (1-theta)*atecho*htecho*ttecho + alateral*hlateral*tinf + asuelo*hsuelo*tsuelo) / (5/2*n*R)      
 
       print(a)
       print(b)
